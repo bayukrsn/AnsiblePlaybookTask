@@ -1,4 +1,3 @@
----
 - name: TASK MENGINSTAL DAN MENJALANKAN NGINX
   hosts: all
   become: true
