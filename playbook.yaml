@@ -1,6 +1,5 @@
 - name: TASK MENGINSTAL DAN MENJALANKAN NGINX
   hosts: all
-  become: true
   tasks:
      - name: SEDANG MENGINSTALL NGINX . . . .
        apt:
