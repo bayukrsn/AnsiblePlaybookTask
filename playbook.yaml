@@ -26,8 +26,8 @@
 
 
   handlers:
-     - name: RESTART NGINX
-       service:
-         become: yes
-         name: nginx
-         state: restarted
+      - name: RESTART NGINX
+        service:
+          become: yes
+          name: nginx
+          state: restarted
