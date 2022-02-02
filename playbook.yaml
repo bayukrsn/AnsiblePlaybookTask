@@ -1,6 +1,6 @@
 ---
 - name: TASK MENGINSTAL DAN MENJALANKAN NGINX
-  hosts: localhost
+  hosts: all
   become: true
 
   tasks:
