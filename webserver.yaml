@@ -1,7 +1,7 @@
 ---
 - hosts: localhost
   vars:
-    http_port: 80
+    http_port: 8080
     author: bayu
   become: yes
   tasks:
