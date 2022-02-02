@@ -2,19 +2,16 @@
 - name: TASK MENGINSTAL DAN MENJALANKAN NGINX
   hosts: all
   become: true
-
   tasks:
      - name: SEDANG MENGINSTALL NGINX . . . .
        apt:
           name: ['nginx']
           state: latest
-
      - name: MEMULAI NGINX . . . .
        service:
           name: nginx
           state: started
           enabled: yes
-     
      - name: MENGIRIM NOTIFIKASI KE TELEGRAM . . . .
        telegram:
           token: '5213394966:AAFZf2AOeZidn03HwoociE0vMxFdsiT9thI'
@@ -23,7 +20,6 @@
             parse_mode: "markdown"
             msg: AUTOMATISASI BERHASIL . . . . . .
             disable_notification: True
-
   handlers:
       - name: RESTART NGINX
         service:
