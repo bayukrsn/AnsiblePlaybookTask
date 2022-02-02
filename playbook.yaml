@@ -16,7 +16,7 @@
           enabled: yes
      
      - name: MENGIRIM NOTIFIKASI KE TELEGRAM . . . .
-       community.general.telegram:
+       telegram:
           token: '5213394966:AAFZf2AOeZidn03HwoociE0vMxFdsiT9thI'
           api_args:
             chat_id: 998661892
