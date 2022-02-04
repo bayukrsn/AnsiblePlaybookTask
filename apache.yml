@@ -15,15 +15,11 @@
       template:
         src: /root/httpd.j2
         dest: /etc/httpd/conf/httpd.conf
-      notify:
-    - restart apache
     
     - name: write the index file
       template:
         src: /root/index.j2
         dest: /var/www/html/index.html
-      notify:
-    - restart apache
     
     - name: ensure apache is running
       service:
